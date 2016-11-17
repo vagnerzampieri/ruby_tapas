@@ -1,6 +1,6 @@
 # https://www.rubytapas.com/2012/10/05/episode-006-forwardable/
 
-# first version
+#######################################################################################
 
 class User
   attr_reader :account
@@ -32,7 +32,7 @@ FacebookAccount = Struct.new(:login, :email_address, :first_name, :last_name)
 user = User.new(GithubAccount.new("vagnerzampieri", "vgzampieri@gmail.com", "Vagner", "Zampieri"))
 user.full_name # => "Vagner Zampieri"
 
-# second version
+#######################################################################################
 
 require "forwardable"
 
@@ -52,7 +52,7 @@ class User
   end
 end
 
-# third version
+#######################################################################################
 
 require "forwardable"
 

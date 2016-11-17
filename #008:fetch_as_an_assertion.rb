@@ -1,6 +1,6 @@
 # https://www.rubytapas.com/2012/10/10/episode-008-fetch-as-an-assertion/
 
-# first version
+#######################################################################################
 
 auth = {
   'uid'  => 12345,
@@ -26,18 +26,18 @@ greeting = "Good morning, #{u.first_name.capitalize}"
 greeting # =>
 # ~> -:4:in `<main>': undefined method `capitalize' for nil:NilClass (NoMethodError)
 
-# second version
+#######################################################################################
 
 u.email_address = auth['info']['email'] or raise ArgumentError
 
-# third version
+#######################################################################################
 
 u.email_address = auth['info'].fetch('email'])
 u.first_name    = auth['info'].fetch('first_name')
 u.last_name     = auth['info'].fetch('last_name')
 u.token         = auth.fetch('credentials').fetch('token')
 
-# fourth version
+#######################################################################################
 
 auth = {
     'uid'  => 12345,

@@ -1,6 +1,6 @@
 # https://www.rubytapas.com/2012/10/01/episode-004-barewords/
 
-# first version
+#######################################################################################
 
 salutation  = "Most agreeable to see you"
 title       = "Commander"
@@ -19,7 +19,7 @@ puts "#{salutation}, #{title} #{full_name}. ",
 # >> My name is Seeree.
 # >> May I order you a coffee?
 
-# elaborated version
+#######################################################################################
 
 $progname = "Dis-organizer"
 
@@ -58,7 +58,7 @@ imp.greet "Commander", "Sam", "Vimes"
 # >> My name is Seeree.
 # >> May I order you a coffee?
 
-# better version
+#######################################################################################
 
 def progname; "Dis-organizer"; end
 

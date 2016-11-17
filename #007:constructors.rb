@@ -1,6 +1,6 @@
 # https://www.rubytapas.com/2012/10/08/episode-007-constructors/
 
-# first version
+#######################################################################################
 
 class Point
   def initialize(x, y)
@@ -9,7 +9,7 @@ class Point
   end
 end
 
-# second version
+#######################################################################################
 
 class Point
   def self.my_new(x, y)
@@ -19,7 +19,7 @@ class Point
   end
 end
 
-# third version
+#######################################################################################
 
 class Point
   def self.my_new(x, y)
@@ -33,7 +33,7 @@ class Point
   end
 end
 
-# fourth version
+#######################################################################################
 
 class Point
   def self.my_new(*args, &block)
@@ -50,7 +50,7 @@ end
 
 point = Point.my_new(3, 5)
 
-# fifth version
+#######################################################################################
 
 class Point
   def self.new_cartesian(x, y)
@@ -105,4 +105,3 @@ end
 
 RpsMove.new(:rock) # => #<RpsMove:0x00000004967428 @move=:rock>
 RpsMove.new(:rock) # => #<RpsMove:0x00000004967428 @move=:rock>
-
